@@ -1,0 +1,15 @@
+title: Micah Taylor
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  I'm a perpetual learner who specializes in leaving the web better than I found it.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+include: ['_pages']
+
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
+plugins:
+  - jekyll-feed
