@@ -17,6 +17,7 @@ body {
   background: #fff;
   color: #777;
   line-height: 1.5;
+  font-size: 1.25em;
 }
 
 .container {
@@ -63,14 +64,12 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 2em;
   text-align: center;
   font-weight: 500;
 }
 
 h3 {
-  font-size: 1.3em;
-  margin: 2rem 0 0 0;
+  margin: 2em 0 0 0;
   line-height: 0.5;
   font-weight: 500;
 }
@@ -109,6 +108,9 @@ ul {
   &:nth-of-type(2n+1) {
     clear: left;
   }
+  h3 {
+    line-height: 2em;
+  }
 }
 
 footer {
@@ -119,7 +121,7 @@ footer {
 .about {
   background-color: #edfcff;
   color: #555;
-  padding: 1rem;
+  padding: 1em;
 }
 
 .hidden {
@@ -241,6 +243,10 @@ footer {
 
 /* Media Queries */
 @media (max-width: 824px) {
+  body {
+    line-height: 1.75;
+    font-size: 1.5em;
+  }
   header nav li {
     margin: 0 10px;
   }
