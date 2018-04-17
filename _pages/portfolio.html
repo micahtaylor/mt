@@ -3,61 +3,27 @@ layout: default
 permalink: /portfolio/
 title: Portfolio
 ---
-<section class="gallery">
-  <ul>
-    <li class="item">
-      <div class="info">
-        <a href="https://login.gov/" title="Login.gov">
-          <img src="{{ "/images/login.gov.png" | prepend: site.baseurl }}">
-        </a>
-        <h3>Login.gov</h3>
-        <p>Simple, secure access to government services online. login.gov offers the public secure and private online access to participating government programs. With one login.gov account, users can sign in to multiple government agencies. Our goal is to make managing federal benefits, services and applications easier and more secure.</p>
-      </div>
-    </li>
-    <li class="item">
-      <div class="info">
-        <a href="https://github.com/18F/C2/wiki/Visual-style-guide" title="C2">
-          <img src="{{ "/images/c2.png" | prepend: site.baseurl }}">
-        </a>
-        <h3>C2/Communicart</h3>
-        <p>Approvals without the hassle. C2 makes government acquisition more efficient by allowing purchase card holders to purchase as quickly and accurately as possible. The results? More time for your staff, better policy adherence, and the knowledge you need to spend more effectively.</p>
-      </div>
-    </li>
-    <li class="item">
-      <div class="info">
-        <a href="https://omb-eregs-demo.app.cloud.gov/" title="Office of Management and Budget Policy Library">
-          <img src="{{ "/images/OMB.png" | prepend: site.baseurl }}">
-        </a>
-        <h3>Office of Management and Budget Policy Library</h3>
-        <p>The beta OMB Policy Library includes excerpts from policies issued by the White House. This project is part of our ongoing efforts to make it easier to find and understand policy</p>
-      </div>
-    </li>
-    <li class="item">
-      <div class="info">
-        <a href="https://seedfund.nsf.gov/" title="America's Seed Fund">
-          <img src="{{ "/images/seedfund.nsf.gov.png" | prepend: site.baseurl }}">
-        </a>
-        <h3>America’s Seed Fund National Science Foundation</h3>
-        <p>Since 1977, America’s Seed Fund powered by NSF (also known as the NSF SBIR/STTR program) has helped startups develop their ideas and bring them to market.</p>
-      </div>
-    </li>
-    <li class="item">
-      <div class="info">
-        <a href="https://www.splendidtable.org/" title="Splendid Table">
-          <img src="{{ "/images/splendidtable.png" | prepend: site.baseurl }}">
-        </a>
-        <h3>The Splendid Table — American Public Media</h3>
-        <p>The Splendid Table began as a live, Saturday-morning call-in show on Minnesota Public Radio. As the program's popularity continued to stretch across the nation, The Splendid Table eventually became the pre-recorded program that is heard on more than 400 public radio stations in the United States.</p>
-      </div>
-    </li>
-    <li class="item">
-      <div class="info">
-        <a href="https://www.yourclassical.org/" title="Your Classical">
-          <img src="{{ "/images/yourclassical.png" | prepend: site.baseurl }}">
-        </a>
-        <h3>YourClassical — American Public Media</h3>
-        <p>Every moment composed. A collection of curated streams, unique programs and features to promote calm and focus.</p>
-      </div>
-    </li>
-  </ul>
+
+<section class="mw7 center avenir">
+  {% if page.title %}
+    <h2 class="baskerville fw1 ph3 ph0-l">{{ page.title | escape }}</h2>
+  {% endif %}
+
+  {% for p in site.portfolios %}
+    <article class="bt bb b--black-10">
+      <a class="db pv4 ph3 ph0-l no-underline black dim" href="{{ p.url }}" title="{{ p.title }}">
+        <div class="flex flex-column flex-row-ns">
+          <div class="pr3-ns mb4 mb0-ns w-100 w-60-ns">
+            <img src="{{ "/images/" | prepend: site.baseurl | append: p.image }}" class="db shadow-4" alt="Screenshot of {{ p.title }}">
+          </div>
+          <div class="w-100 w-60-ns pl3-ns">
+            <h1 class="f3 fw1 baskerville mt0 lh-title">{{ p.title }}</h1>
+            <p class="f6 f5-l lh-copy">
+              {{ p.description }}
+            </p>
+          </div>
+        </div>
+      </a>
+    </article>
+  {% endfor %}
 </section>
