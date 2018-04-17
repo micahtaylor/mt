@@ -1,19 +1,15 @@
-<header>
-  <nav>
-    <h2>Micah Taylor</h2>
-    <ul>
-      <li>
-        <a href="{{ "/" | prepend: site.baseurl }}" title="Home">Home</a>
-      </li>
-      <li>
-        <a href="{{ "/portfolio/" | prepend: site.baseurl }}" title="Portfolio">Portfolio</a>
-      </li>
-      <li>
-        <a href="https://docs.google.com/document/d/1q1JyRrQB8i1wa84w456BLYKXPBLtugdduZ3Ew7IQc-k/edit?usp=sharing" title="Resume">Resume</a>
-      </li>
-      <li>
-        <a href="mailto:micah@micahtaylor.com?subject=Highest of fives!" title="Contact">Contact</a>
-      </li>
-    </ul>
-  </nav>
+<header class="bg-white black-80 tc pv4 avenir">
+  <a href="/" class="link black">
+    <img src="https://instagram.ffcm1-2.fna.fbcdn.net/vp/2f0d4f72bee62e7724171722be3173c9/5B582FED/t51.2885-19/s320x320/27892749_1839111459440646_6597432987745255424_n.jpg" alt="A image of the handsome Micah Taylor" class="bg-black ba b--black dib w3 h3 br-100">
+  </a>
+  <h1 class="mt2 mb0 fw1 f1">{{ site.title | escape }}</h1>
+  {% if site.nav %}
+    <nav class="bt bb tc mw7 center mt4">
+      {% for n in site.nav %}
+        <a class="f4 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa3 ph4-l" href="{{ n.url | prepend: site.baseurl }}" title="Home">{{n.title}}</a>
+      {% endfor %}
+    </nav>
+
+  {% endif %}
+
 </header>

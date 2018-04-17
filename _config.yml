@@ -5,6 +5,42 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+nav:
+- title: Home
+  url: /
+- title: Portfolio
+  url: /portfolio
+- title: Resumé
+  url: https://docs.google.com/document/d/1q1JyRrQB8i1wa84w456BLYKXPBLtugdduZ3Ew7IQc-k/edit?usp=sharing
+- title: Contact
+  url: mailto:micah@micahtaylor.com 
+
+portfolios:
+- title: Login.gov
+  image: login.gov.png
+  url: https://login.gov/
+  description: Simple, secure access to government services online. login.gov offers the public secure and private online access to participating government programs. With one login.gov account, users can sign in to multiple government agencies. Our goal is to make managing federal benefits, services and applications easier and more secure.
+- title: C2/Communicart
+  image: c2.png
+  url: https://github.com/18F/C2/wiki/Visual-style-guide
+  description: Approvals without the hassle. C2 makes government acquisition more efficient by allowing purchase card holders to purchase as quickly and accurately as possible. The results? More time for your staff, better policy adherence, and the knowledge you need to spend more effectively.
+- title: Office of Management and Budget Policy Library
+  image: omb.png
+  url: https://omb-eregs-demo.app.cloud.gov/
+  description: The beta OMB Policy Library includes excerpts from policies issued by the White House. This project is part of our ongoing efforts to make it easier to find and understand policy.
+- title: America’s Seed Fund National Science Foundation
+  image: seedfund.nsf.gov.png
+  url: https://seedfund.nsf.gov/
+  description: Since 1977, America’s Seed Fund powered by Nation Science Foundation (also known as the NSF SBIR/STTR program) has helped startups develop their ideas and bring them to market.
+- title: The Splendid Table — American Public Media
+  image: splendidtable.png
+  url: https://www.splendidtable.org/
+  description: The Splendid Table began as a live, Saturday-morning call-in show on Minnesota Public Radio. As the program's popularity continued to stretch across the nation, The Splendid Table eventually became the pre-recorded program that is heard on more than 400 public radio stations in the United States.
+- title: Your Classical — American Public Media
+  image: yourclassical.png
+  url: https://www.yourclassical.png/
+  description: Every moment composed. A collection of curated streams, unique programs and features to promote calm and focus.
+
 include: ['_pages']
 
 # Build settings
