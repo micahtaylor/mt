@@ -4,9 +4,9 @@ permalink: /portfolio/
 title: Portfolio
 ---
 
-<section class="mw7 center avenir">
+<section class="mw7 center">
   {% if page.title %}
-    <h2 class="baskerville fw1 ph3 ph0-l">{{ page.title | escape }}</h2>
+    <h2 class="fw1 ph3 ph0-l">{{ page.title | escape }}</h2>
   {% endif %}
 
   {% for p in site.portfolios %}
@@ -17,7 +17,7 @@ title: Portfolio
             <img src="{{ "/images/" | prepend: site.baseurl | append: p.image }}" class="db shadow-4" alt="Screenshot of {{ p.title }}">
           </div>
           <div class="w-100 w-60-ns pl3-ns">
-            <h1 class="f3 fw1 baskerville mt0 lh-title">{{ p.title }}</h1>
+            <h1 class="f3 fw1 mt0 lh-title">{{ p.title }}</h1>
             <p class="f6 f5-l lh-copy">
               {{ p.description }}
             </p>
