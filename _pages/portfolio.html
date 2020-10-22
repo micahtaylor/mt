@@ -6,11 +6,11 @@ title: Portfolio
 
 <section class="mw7 center">
   {% if page.title %}
-    <h2 class="fw1 ph3 ph0-l">{{ page.title | escape }}</h2>
+    <h2 class="fw1 ph3 ph0-l bb b--black-10 pb3 mb0">{{ page.title | escape }}</h2>
   {% endif %}
 
   {% for p in site.portfolios %}
-    <article class="bt bb b--black-10">
+    <article class="bb b--black-10">
       <a class="db pv4 ph3 ph0-l no-underline black dim" href="{{ p.url }}" title="{{ p.title }}">
         <div class="flex flex-column flex-row-ns">
           <div class="pr3-ns mb4 mb0-ns w-100 w-60-ns">

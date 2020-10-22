@@ -1,0 +1,25 @@
+---
+layout: default
+permalink: /contact
+title: Contact
+---
+<section class="mw7 center ph1">
+    {% if page.title %}
+    <h2 class="fw1 ph3 ph0-l bb b--black-10 pb3">{{ page.title | escape }}</h2>
+    {% endif %}
+
+    <form action="https://formspree.io/f/xqkgqlyz" method="POST" class="flex flex-column justify-center pv3">
+        <label class="f6 db mb2">
+            Your email:
+            <input type="text" name="_replyto" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2">
+        </label>
+        <label class="f6 db mb2">
+            Your message:
+            <textarea name="message" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2"></textarea>
+        </label>
+
+        <!-- your other form fields go here -->
+
+        <button type="submit" class="f6 link dim br2 ph3 pv2 mb2 dib white bg-black measure">Send</button>
+    </form>
+</section>
