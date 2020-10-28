@@ -4,7 +4,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   I'm a perpetual learner who specializes in leaving the web better than I found it.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-bio: I have a deep knowledge of design principles and systems for mobile web. I like to think of myself as an avid problem solver who is empathtic to the user by progressively enhancing analytic driven solutions. I have extensive experience in leading small, distributed, multidisciplinary, agile teams to successful milestones and am a skilled author of design and development for the future-friendly web. Based in beautiful St. Paul, Minnesota.
+bio: I have a deep knowledge of design principles and systems for mobile web. I like to think of myself as an avid problem solver who is empathetic to the user by progressively enhancing analytic driven solutions. I have extensive experience in leading small, distributed, multidisciplinary, agile teams to successful milestones and am a skilled author of design and development for the future-friendly web. Based in beautiful St. Paul, Minnesota.
 
 nav:
   - title: Home
@@ -17,29 +17,49 @@ nav:
     url: /contact
 
 portfolios:
+  - title: TED.com talk page
+    image: TED_tpv4.png
+    url: https://ted.com
+    description: The fourth version of the TED talk page is an effort to introduce features incorporating user engagement via personalization, discussions, and speaker updates.
+  - title: TEDx SaaS
+    image: TEDx_events_SasS.png
+    url: https://www.ted.com/participate/organize-a-local-tedx-event
+    description: Think of TEDx as hosting an awesome dinner party, with great food, inspirational videos, brilliant speakers and mind-blowing conversation. A software as a service model for TEDx organizers. Allowing users to apply for a license, plan an event, and upload videos.
+  - title: TED Audio Collective
+    image: TAC.png
+    url: https://audiocollective.ted.com/
+    description: A collection of podcasts from TED that explore urgent topics, foster debate and inspire people to make change—for themselves and for the world. These podcasts are for the curious. They're for listeners as excited by philosophy, psychology and design as science, technology, business—and everything in between.
+  - title: Audacious Project
+    image: audacious.png
+    url: https://audaciousproject.org/
+    description: Housed at TED, The Audacious Project is a collaborative funding initiative that is unlocking social impact on a grand scale. Every year we select and nurture a group of big, bold solutions to the world’s most urgent challenges, and with the support of an inspiring group of donors and supporters come together to get them launched.
+  - title: U.S. Web Design System
+    image: uswds.png
+    url: https://designsystem.digital.gov/
+    description: The United States Web Design System is a library of open source UI components and a visual style guide for U.S. federal government websites. Making it make it easier to build accessible, mobile-friendly government websites for the American public.
   - title: Login.gov
     image: login.gov.png
     url: https://login.gov/
     description: Simple, secure access to government services online. login.gov offers the public secure and private online access to participating government programs. With one login.gov account, users can sign in to multiple government agencies. Our goal is to make managing federal benefits, services and applications easier and more secure.
-  - title: C2/Communicart
-    image: c2.png
-    url: https://github.com/18F/C2/wiki/Visual-style-guide
-    description: Approvals without the hassle. C2 makes government acquisition more efficient by allowing purchase card holders to purchase as quickly and accurately as possible. The results? More time for your staff, better policy adherence, and the knowledge you need to spend more effectively.
   - title: Office of Management and Budget Policy Library
-    image: omb.png
+    image: OMB.png
     url: https://omb-eregs-demo.app.cloud.gov/
     description: The beta OMB Policy Library includes excerpts from policies issued by the White House. This project is part of our ongoing efforts to make it easier to find and understand policy.
   - title: America’s Seed Fund National Science Foundation
     image: seedfund.nsf.gov.png
     url: https://seedfund.nsf.gov/
     description: Since 1977, America’s Seed Fund powered by Nation Science Foundation (also known as the NSF SBIR/STTR program) has helped startups develop their ideas and bring them to market.
+  - title: C2/Communicart
+    image: c2.png
+    url: https://github.com/18F/C2/wiki/Visual-style-guide
+    description: Approvals without the hassle. C2 makes government acquisition more efficient by allowing purchase card holders to purchase as quickly and accurately as possible. The results? More time for your staff, better policy adherence, and the knowledge you need to spend more effectively.
   - title: The Splendid Table — American Public Media
     image: splendidtable.png
     url: https://www.splendidtable.org/
     description: The Splendid Table began as a live, Saturday-morning call-in show on Minnesota Public Radio. As the program's popularity continued to stretch across the nation, The Splendid Table eventually became the pre-recorded program that is heard on more than 400 public radio stations in the United States.
   - title: Your Classical — American Public Media
     image: yourclassical.png
-    url: https://www.yourclassical.png/
+    url: https://www.yourclassical.org/
     description: Every moment composed. A collection of curated streams, unique programs and features to promote calm and focus.
 
 include: ["_pages"]
